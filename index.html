@@ -53,9 +53,9 @@
 
         const NAV_LINKS = [
           { id: 'home', label: 'News & Events' }, // 点击跳转首页
+          { id: 'team', label: 'People' },
           { id: 'research', label: 'Research' },
           { id: 'publication', label: 'Publication' },
-          { id: 'team', label: 'People' },
           { id: 'resources', label: 'Data & Resources' },
           { id: 'about', label: 'About Us' },
         ];
@@ -110,7 +110,9 @@
                     "ULSR-GS: : Urban large-scale surface reconstruction Gaussian splatting with multi-view geometric consistency. ISPRS Journal of Photogrammetry and Remote Sensing, 230 (2025): 861-880. https://doi.org/10.1016/j.isprsjprs.2025.10.008 ",
                     "项目主页： https://ulsrgs.github.io/",
                     "MVG-Splatting: Multi-view guided Gaussian splatting with adaptive quantile-based geometric consistency densification. Information Fusion, (2025):103540. https://doi.org/10.1016/j.inffus.2025.103540.",
-
+                    "为什么要从MVG-Splatting 走向ULSR-GS？",
+                    "MVG-Splatting[3]的出发点是把多视角几何一致性引入的稠密化里：通过法向/深度的联合细化与自适应分位数的深度图投影致密化策略，改善单视角主导带来的细节流失，并用联合损失保证高质量的几何与外观的一致性（主要在单卡RTX 4090环境完成方法验证）。",
+                    "ULSR-GS[2]正是在 MVG-Splatting的方法基础上，进一步解决“城市级可扩展”的工程难题：提出以 SfM 稀疏点云为核心的（point-to-photo）分区策略，替代“以相机为中心”的切分逻辑。在每个子区内部，继续使用MVG-Splatting的多视角引导致密化策略并加入多视角深度/法向一致性损失。训练完成后，子区直接独立提网格并无缝拼接。配合多卡并行，ULSR-GS在 GauU-Scene[4]、UrbanScene3D[5]与近 一万张影像的自采场景上，稳定拿到更高的几何质量与更可控的训练时长，验证了方法—工程一体化的城市级可扩展能力。"
                 ],
             },
             'laser-conf': {
@@ -121,12 +123,57 @@
                 img: "images/news/laserconf/640.png",
                 abstract: "本研究提出的ULSR-GS架构通过点到影像分区和多视几何一致性约束，实现了高效可扩展的城市级曲面重建。",
                 body: [
-                    "该成果为大规模数字孪生与三维城市建模提供了一种通用且高精度的解决方案。",
-                    "通过引入高斯溅射技术，大幅提升渲染速度的同时保留了高频细节。"
+                    "2025年9月26日至28日，第九届全国激光雷达大会在湖北武汉隆重召开。作为我国该领域最具影响力的学术盛会之一，本届大会汇聚了来自全国各地的知名学者、科研人员及企业代表，围绕激光雷达技术在智能测绘、无人驾驶、遥感探测与空间信息应用等领域的前沿进展与未来趋势，展开了广泛而深入的交流。课题组成员赵吴凡教授、戴劭勍博士、张帅、史哲成共4人参会，分别做专题报告和参加点云比赛。",
+                    { type: 'image', src: 'images/news/laserconf/6401.png', caption: '会议海报' },
+                    "28日上午，赵吴凡教授作了题为 《基础模型时代下的城市三维建模与场景理解》 的学术报告。该报告总结了课题组围绕“建模-感知-动态分析”的4D时空城市建模与应用的研究框架和研究成果，系统性地阐释了基础模型如何有效地支撑城市模型进行自动化构建、深入解释及准确评估，并实现其可扩展性、精细化处理以及语义丰富性。",
+                    { type: 'image', src: 'images/news/laserconf/640 (1).png', caption: '赵吴凡教授做专题汇报' },
+                    "在大会同期举办的点云智能解析大赛“铁路场景语义分割”赛道中，实验室成员张帅、史哲成报名参赛并取得了亮眼成绩。参赛者需要为铁路点云开发语义分割模型，对涵盖不同铁路环境中的铁路基础设施、建筑结构和自然元素的11类别进行分类，解决遮挡和类别不平衡等挑战。成员围绕特征增强和多尺度特征融合等方面设计算法，实验结果在所有参赛团队中名列前茅，展现了团队在复杂场景三维点云理解与智能分割上的创新探索与实践能力。课题组成员获得二等奖，赵吴凡老师作为指导老师荣获 “优秀指导教师奖”。",
+                    { type: 'image', src: 'images/news/laserconf/640 (2).png', caption: '课题组成员张帅做比赛汇报' },
+                    { type: 'image', src: 'images/news/laserconf/640 (3).png', caption: '比赛获奖证书' },
+                    { type: 'image', src: 'images/news/laserconf/640 (4).png', caption: '优秀指导教师获奖证书' },
+                    "课题组在本次大会上系统展示了在城市三维建模与点云分割方面取得的阶段性成果，并与各界专家深入交流。未来，团队将继续推进“点云+智能建模+应用”研究，完善复杂场景三维建模方法，积极探索动态建模与实时更新技术，推动成果在智慧城市、智能交通等领域的实际应用，助力国家建设与社会发展。",
                 ],
+                
             },
-        };
+            'boyaSa': {
+                title: "论坛预告|从地理课堂走向创新未来——汤国安教授谈科学思维训练",
+                subtitle: "报告从地理学专业教学如何强化学生探究思维、求证思维、发散思维、逻辑思维、逆向思维、批判思维、辩证思维、多学科融合思维等方面进行全方位剖析分析",
+                date: "Sep 5, 2025",
+                author: "Xiaozhuo Li, Wufan Zhao et al.",
+                img: "images/news/boyaconf/ScreenShot_2025-11-27_005325_461.png",
+                abstract: "地理学生科学创新思维的训练与养成",
+                body: [
+                    
+                ],
+                
+            },
+          
+            'LandSI': {
+                title: "新闻动态 | Land专刊征稿——促进健康与福祉的城市空间规划",
+                subtitle: "我们欢迎原创研究、综述和案例研究，利用这些创新数据和分析工具，探索如何优化城市空间规划，以积极促进不同城市人群的身体健康、心理健康、社会公平和整体生活质量的环境。",
+                date: "Sep 5, 2025",
+                author: "Xiaozhuo Li, Wufan Zhao et al.",
+                img: "images/news/landSI/ScreenShot_2025-11-27_010404_047.png",
+                abstract: "Land专刊征稿",
+                body: [
+                    
+                ],
+                
+            },
 
+            'ICUSI': {
+                title: "新闻动态丨AI4City课题组成员参加第3届城市科学大会",
+                subtitle: "香港科技大学（广州）社会枢纽城市治理与设计学域AI4DCity课题组两名硕士生罗钧行，李鸣晨参加会议，并与国际学者开展交流。",
+                date: "Sep 4, 2025",
+                author: "Xiaozhuo Li, Wufan Zhao et al.",
+                img: "images/news/ICUSI/微信图片_2025-11-27_010923_780.png",
+                abstract: "香港科技大学（广州）社会枢纽城市治理与设计学域AI4DCity课题组两名硕士生罗钧行，李鸣晨参加会议，并与国际学者开展交流。",
+                body: [
+                    
+                ],
+                
+            },
+          };
         // --- 首页数据 ---
         // 新闻 (6个格子)
         const NEWS_ITEMS = [
@@ -148,7 +195,27 @@
               desc: ARTICLE_CONTENT['laser-conf'].subtitle, 
               meta: ARTICLE_CONTENT['laser-conf'].date, 
               img: ARTICLE_CONTENT['laser-conf'].img, 
-              articleId: 'laser-conf'},
+              articleId: 'laser-conf'},  
+
+            { id: 100, title: ARTICLE_CONTENT['boyaSa'].title, 
+              desc: ARTICLE_CONTENT['boyaSa'].subtitle, 
+              meta: ARTICLE_CONTENT['boyaSa'].date, 
+              img: ARTICLE_CONTENT['boyaSa'].img, 
+              articleId: 'boyaSa'},
+
+            { id: 99, title: ARTICLE_CONTENT['LandSI'].title, 
+              desc: ARTICLE_CONTENT['LandSI'].subtitle, 
+              meta: ARTICLE_CONTENT['LandSI'].date, 
+              img: ARTICLE_CONTENT['LandSI'].img, 
+              articleId: 'LandSI'},
+            
+            { id: 98, title: ARTICLE_CONTENT['ICUSI'].title, 
+            desc: ARTICLE_CONTENT['ICUSI'].subtitle, 
+            meta: ARTICLE_CONTENT['ICUSI'].date, 
+            img: ARTICLE_CONTENT['ICUSI'].img, 
+            articleId: 'ICUSI'},
+
+            
         ];
 
         // 首页展示的资源 (6个格子)
@@ -179,19 +246,19 @@
         // --- 列表页数据 ---
         const RESEARCH_PROJECTS = [
           {
-            id: 1, title: "Semantic Understanding of Multi-modal Remote Sensing Data",
-            desc: "We cordially invite esteemed researchers and scholars to submit high-quality manuscripts. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            img: "https://via.placeholder.com/380x253/222/fff?text=Remote+Sensing", date: "Updated Nov 17 2025"
+            id: 1, title: "3D visual understanding and reconstruction",
+            desc: "Application of Generative AI in Urban Scenarios Visual Localization and Multi-View Reconstruction Intelligent Processing of Multimodal Remote Sensing Data.",
+            img: "images/research/ScreenShot_2025-11-27_014217_401.png", date: "Updated Nov 17 2025"
           },
           {
-            id: 2, title: "Urban-scale surface reconstruction based on Gaussian Splatting",
-            desc: "Focusing on efficient 3D city modeling using emerging Gaussian Splatting techniques to reconstruct urban surfaces with high fidelity.",
-            img: "https://via.placeholder.com/380x253/E3A886/fff?text=3D+GS", date: "Updated Oct 10 2025"
+            id: 2, title: "Multimodal Spatiotemporal Data Mining and Interaction",
+            desc: "Application of Generative AI in Urban ScenariosVisual Localization and Multi-View Reconstruction Intelligent Processing of Multimodal Remote Sensing Data.",
+            img: "images/research/ScreenShot_2025-11-27_014246_087.png", date: "Updated Oct 10 2025"
           },
           {
-            id: 3, title: "Spatiotemporal Data Mining for Smart City Traffic Flow",
-            desc: "Analyzing traffic patterns using graph neural networks to predict congestion and optimize traffic light timings in real-time.",
-            img: "https://via.placeholder.com/380x253/444/fff?text=Traffic+AI", date: "Updated Sep 05 2025"
+            id: 3, title: "Multimodal Spatiotemporal Data Mining and Interaction",
+            desc: "Application of Generative AI in Urban Scenarios Visual Localization and Multi-View Reconstruction Intelligent Processing of Multimodal Remote Sensing Data.",
+            img: "images/research/ScreenShot_2025-11-27_014234_200.png", date: "Updated Sep 05 2025"
           },
           {
             id: 4, title: "Spatiotemporal Data Mining for Smart City Traffic Flow",
@@ -447,7 +514,7 @@
                   <div className="w-full md:w-1/4 pt-0 pr-6 pb-6 pl-6 flex flex-col justify-top">
                     <h2 className="px-5 text-4xl sm:text-[64px] font-bold leading-none text-left">People</h2>
                     <div className="p-6 flex flex-col justify-center text-left">
-                      <p className="text-sm lg:text-lg text-gray-600 mb-6 text-justify">
+                      <p className="text-sm lg:text-sm text-gray-600 mb-6 text-justify">
                         Our team is a diverse and talented group of researchers, including PhD candidates, MPhil students, Research Associates (RAs), and visiting students from around the world. Each member brings unique expertise and perspectives from varied academic and professional backgrounds, creating a dynamic collaborative environment. Together, we are committed to advancing cutting-edge research in AI-driven urban modeling and making meaningful contributions to sustainable city development.
                       </p>
                       <button onClick={() => setPage('team')} className="text-xl font-bold hover:underline flex items-center gap-2 text-left">
@@ -455,8 +522,8 @@
                       </button>
                     </div>
                   </div>
-                  <div className="md:w-3/4 aspect-[3/2] md:aspect-auto md:h-[800px] bg-gray-300 relative overflow-hidden hover-zoom-container">
-                    <img src="images/people/group.jpg" className="absolute inset-0 w-full h-full object-cover hover-zoom-img" alt="Team" />
+                  <div className="md:w-3/4 aspect-[3/2] md:aspect-auto md:h-[800px] bg-gray-300 relative overflow-hidden hover-zoom-container ">
+                    <img src="images/people/group.jpg" className="aspect-[1/2] inset-0 w-full h-full object-cover hover-zoom-img " alt="Team" />
                   </div>
                 </div>
               </FadeInSection>
@@ -487,13 +554,22 @@
                       <div className="max-w-4xl mx-auto text-center mb-8 px-0">
                           <h2 className="text-4xl sm:text-5xl font-bold mb-6">About Us</h2>
                           <h3 className="text-2xl font-semibold mb-4">AI 4D City(AI4CITY) Lab</h3>
+                          <div>
+                          <a href="mailto:wufanzhao@hkust-gz.edu.cn" target="_blank" class="text-blue-500 underline">wufanzhao@hkust-gz.edu.cn</a>
+                            <br/>
+                          <a href="https://www.openstreetmap.org/?#map=17/22.891298/113.476131&layers=N" target="_blank" class="text-blue-500 underline">HKUST(GZ)E1 L4 408</a>
+                          </div>
                           <p className="text-lg text-gray-600 leading-relaxed text-justify">
-                              4D refers to 3D space plus time series modeling. As the type and density of the remote sensing data continue to grow exponentially, Dr. Wufan Zhao and his AI4City Lab aim to help pioneer computationally efficient AI-based processing and modeling strategies to solve complex and practical urban problems by integrating the multi-dimensional/modal characteristics of big earth observation data.
+                              4D refers to 3D space plus time series modeling. As the type and density of the remote sensing data continue to grow exponentially, Dr. Wufan Zhao and his AI4City Lab aim to help pioneer computationally efficient AI-based processing and modeling strategies to solve complex and practical urban problems by integrating the multi-dimensional/modal characteristics of big earth observation data.<br/>
+                              <br/>
+                              Long-term openings for RA and PhD positions in the Lab. Applications are welcome, students with a master’s degree background are preferred. PhD students will be admitted in January and September each year. Please refer to the official guidelines for more details.<br/>
+                              <br/>
+                              Undergraduate students are encouraged to apply for the <a href="https://www.hkust-gz.edu.cn/academics/education-innovation/red-bird-mphil-program/" target="_blank" class="text-blue-500 underline">RedBird MPhil of HKUST-gz</a>. Postdoc positions are open. Very competitive salary and research fund package. Welcome to drop your resume and research proposal.<br/>
                           </p>
                       </div>
                       {/* 修复: 图片容器宽度与文字一致 max-w-4xl，居中，直角 */}
-                      <div className="w-full max-w-4xl mx-auto aspect-video bg-gray-100 overflow-hidden shadow-sm mb-12 rounded-none">
-                          <img src="https://via.placeholder.com/1200x600/ddd/333?text=Lab+Research+Diagram" className="w-full h-full object-cover" alt="Research Diagram" />
+                      <div className="w-full h-full max-w-4xl mx-auto aspect-auto bg-gray-100 overflow-hidden shadow-sm mb-12 rounded-none">
+                          <img src="images/frontPage/research-field.jpg" className="w-full h-full object-cover" alt="Research Diagram" />
                       </div>
                   </div>
               </FadeInSection>
@@ -580,7 +656,7 @@
             );
         };
 
-        // 独立页面包装器
+        // 独立页面(研究，出版，资源)包装器
         const ResearchPage = () => (
             <ListPage 
                 title="Research Projects" 
@@ -613,7 +689,7 @@
           return (
               <div className="pt-[81px] w-full min-h-screen">
                   <div className="max-w-4xl mx-auto px-6 py-16 md:py-20 flex flex-col items-center">
-                      <h1 className="text-3xl md:text-4xl 3xl:text-5xl font-bold text-center mb-6 leading-[2]">{content.title}</h1>
+                      <h1 className="text-3xl md:text-4xl 3xl:text-5xl font-bold text-left mb-6 leading-[2]">{content.title}</h1>
                       <div className="text-gray-500 mb-12 text-sm md:text-base">{content.date} • By {content.author}</div>
                       
                       <div className="w-full aspect-video bg-gray-100 shadow-sm mb-16 rounded-2xl overflow-hidden">
