@@ -289,21 +289,301 @@
 
         // --- 团队数据 ---
         const TEAM_DATA = {
+          //pi卡片数据
           pi: {
             name: "Wufan Zhao",
             role: "Principal Investigator",
-            bio: "Dr. Wufan Zhao is currently an Assistant Professor at the Urban Governance and Design (UGOD) Thrust, The Hong Kong University of Science and Technology (Guangzhou). He is the Principal Investigator (PI) of AI4DCity Lab. His research primarily focuses on AI-based remote sensing image understanding, 3D city modeling, and multi-modal spatiotemporal data fusion.",
-            edu: "PhD in Remote sensing and Earth Observation, ITC, University of Twente (2022)MSc in Geoinformatics, Nanjing Normal University & University of Salzrburg (2018)BSc in GIS, Northwest A&F University (2015)",
-            Awards: "Top 30 reviewers of the ISPRS Journal of Photogrammetry and Remote Sensing for 2023.UTwente ITC Ph.D. Publication Award, 2022 CSC Scholarship, 2018-2022",
-            ri: "AI based remote sensing data processing and 3D modeling Spatio-temporal data science and digital twin cities Urban complex systems and uncertainty",
+            bio: "Dr. Wufan Zhao is currently an Assistant Professor at the Urban Governance and Design (UGOD) Thrust, The Hong Kong University of Science and Technology (Guangzhou). He is the Principal Investigator (PI) of AI4DCity Lab. Before joining HKUST(GZ), he was a Research Fellow at Geomatics Group, KU Leuven. His research primarily focuses on AI-based remote sensing image understanding, 3D city modeling, multi-modal spatiotemporal data fusion, and their methodological and applied studies. His researches will specifically addresses challenges related to urban environments and socio-economic factors under various scales of Sustainable Development Goals (SDGs).",
+            edu: ["PhD in Remote sensing and Earth Observation, ITC, University of Twente (2022)", 
+                  "MSc in Geoinformatics, Nanjing Normal University & University of Salzrburg (2018)",
+                  "BSc in GIS, Northwest A&F University (2015)"],
+            Awards: ["Top 30 reviewers of the ISPRS Journal of Photogrammetry and Remote Sensing for 2023","UTwente ITC Ph.D. Publication Award, 2022", "CSC Scholarship, 2018-2022",],
+            ri: ["AI based remote sensing data processing and 3D modeling", "Spatio-temporal data science and digital twin cities","Urban complex systems and uncertainty",],
             img: "images/people/wufan.jpg"
           },
+
+          //phd卡片数据
           phd: [
-            { name: "Xiaozhuo Li", role: "Large Scale 3D Reconstruction", email: "xl@ust.hk", homepage: "https://example.com/xl", img: "https://via.placeholder.com/200/ddd/333?text=XL" },
-            { name: "Tongyan Hua", role: "3D Vision", email: "th@ust.hk", homepage: "#", img: "https://via.placeholder.com/200/ddd/333?text=TH" },
-            { name: "Shuai Zhang", role: "Multimodal Basic Models", email: "sz@ust.hk", homepage: "#", img: "https://via.placeholder.com/200/ddd/333?text=SZ" },
-            { name: "Goodchild", role: "GIS Technology", email: "good@geog.ucsb.edu", homepage: "#", img: "https://via.placeholder.com/200/ddd/333?text=GC" },
-          ]
+              {
+                name: "Zhuoxiao Li",
+                role: "(Postdoc Researcher)3D Reconstruction, Gaussian Splatting",
+                email: "Zhuoxiao.Li@liverpool.ac.uk",
+                homepage: "#",
+                img: "images/people/Lizongrong.png"
+              },
+              {
+                name: "Tongyan Hua",
+                role: "3D city reconstruction, NeRF and SLAM",
+                email: "thua388@connect.hkust-gz.edu.cn",
+                homepage: "https://thua919.github.io/",
+                img: "images/people/TongyanHua.png"
+              },
+              {
+                name: "Shuai Zhang",
+                role: "Point cloud processing and foundation model",
+                email: "shuaizhang2@hkust-gz.edu.cn",
+                homepage: "https://www.researchgate.net/profile/Shuai-Zhang-194/research",
+                img: "images/people/ShuaiZhang.png"
+              },
+              {
+                name: "Jing Ou",
+                role: "3D vision，3D city localization and reconstruction",
+                email: "",
+                homepage: "#",
+                img: "https://via.placeholder.com/200/ddd/333?text=JO"
+              },
+              {
+                name: "Liwei Zou",
+                role: "Multimodal data mining, Disaster analysis, Urban resilience",
+                email: "zou.liwei.levi@gmail.com",
+                homepage: "#",
+                img: "https://via.placeholder.com/200/ddd/333?text=LZ"
+              },
+              {
+                name: "Liang Zeng",
+                role: "Self-supervised learning, computer vision, multi-modal remote sensing processing",
+                email: "",
+                homepage: "https://iiw.kuleuven.be/onderzoek/geomatics/people/00159796",
+                img: "https://via.placeholder.com/200/ddd/333?text=LZ"
+              },
+              {
+                name: "Suzanna Cuypers",
+                role: "Deep leanrning for remote sensing image analysis, land use classification",
+                email: "",
+                homepage: "https://iiw.kuleuven.be/onderzoek/geomatics/people/00130472",
+                img: "https://via.placeholder.com/200/ddd/333?text=SC"
+              }
+            ],
+
+            // Master Students
+            mst: [
+              {
+                name: "Junxing Luo",
+                role: "Built environment and infrastructure assessment, human mobility analysis",
+                email: "junxingluo@hkust-gz.edu.cn",
+                homepage: "#",
+                img: "https://via.placeholder.com/200/ddd/333?text=JL"
+              },
+              {
+                name: "Mingchen Li",
+                role: "Multi-agent social simulation, time series, computational social science",
+                email: "mli736@hkust-gz.edu.cn",
+                homepage: "#",
+                img: "https://via.placeholder.com/200/ddd/333?text=ML"
+              },
+              {
+                name: "Tengxi Wang",
+                role: "Remote sensing image analysis, time series analysis, machine learning",
+                email: "twang744@connect.hkust-gz.edu.cn",
+                homepage: "#",
+                img: "https://via.placeholder.com/200/ddd/333?text=TW"
+              },
+              {
+                name: "Yumiao Xiao",
+                role: "Terrestrial carbon cycle, spatio-temporal data analysis, plant ecology",
+                email: "yxiao224@connect.hkust-gz.edu.cn",
+                homepage: "#",
+                img: "https://via.placeholder.com/200/ddd/333?text=YX"
+              },
+              {
+                name: "Feiya Shu",
+                role: "3D Point Clouds, Multimodal Remote Sensing",
+                email: "",
+                homepage: "#",
+                img: "https://via.placeholder.com/200/ddd/333?text=FS"
+              },
+              {
+                name: "Chenyuan Zhu",
+                role: "Remote sensing image analysis and 3D modeling",
+                email: "15934896599@163.com",
+                homepage: "#",
+                img: "https://via.placeholder.com/200/ddd/333?text=CZ"
+              }
+            ],
+
+            // Research Assistants
+            ra: [
+              {
+                name: "Zongrong Li",
+                role: "GeoAI, CityLLM",
+                email: "zongrongli@hkust-gz.edu.cn",
+                homepage: "https://jasper0122.github.io/",
+                img: "https://via.placeholder.com/200/ddd/333?text=ZL"
+              },
+              {
+                name: "Zhongcheng Hong",
+                role: "3D reconstruction & Self-supervised visual task",
+                email: "Zhongchengh@hkust-gz.edu.cn",
+                homepage: "#",
+                img: "https://via.placeholder.com/200/ddd/333?text=ZH"
+              },
+              {
+                name: "Wenbo Lv",
+                role: "Spatiotemporal statistics, Remote sensing image processing",
+                email: "lyu.geosocial@gmail.com",
+                homepage: "https://spatlyu.github.io/",
+                img: "https://via.placeholder.com/200/ddd/333?text=WL"
+              },
+              {
+                name: "Yinrui Ren",
+                role: "Deep learning and remote sensing image analysis",
+                email: "2023025221@m.scnu.edu.com",
+                homepage: "#",
+                img: "https://via.placeholder.com/200/ddd/333?text=YR"
+              },
+              {
+                name: "Shuxian Shi",
+                role: "Remote sensing applications and urban environmental monitoring",
+                email: "Shelly-Shi@outlook.comR",
+                homepage: "#",
+                img: "https://via.placeholder.com/200/ddd/333?text=SS"
+              },
+              {
+                name: "Zhecheng Shi",
+                role: "Computer vision & Point cloud processing",
+                email: "",
+                homepage: "#",
+                img: "https://via.placeholder.com/200/ddd/333?text=ZS"
+              },
+              {
+                name: "Bingchen Li",
+                role: "Urban Economics & Regional Economics",
+                email: "bingchen054@gmail.com",
+                homepage: "#",
+                img: "https://via.placeholder.com/200/ddd/333?text=BL"
+              },
+              {
+                name: "Chunliang Hua",
+                role: "GeoAI, Autonomous Drone Planning",
+                email: "",
+                homepage: "#",
+                img: "https://via.placeholder.com/200/ddd/333?text=CH"
+              },
+              {
+                name: "Qican Weng",
+                role: "Spatial science, GeoAI, Visualization",
+                email: "626710943@QQ.com",
+                homepage: "#",
+                img: "https://via.placeholder.com/200/ddd/333?text=QW"
+              }
+            ],
+
+            // Visiting Students
+            vst: [
+              {
+                name: "Xiaoyu Li",
+                role: "UAV remote sensing, environmental monitoring and LULC classification",
+                email: "xiaoyu6936@gmail.com",
+                homepage: "#",
+                img: "https://via.placeholder.com/200/ddd/333?text=XL"
+              },
+              {
+                name: "Yongli Tang",
+                role: "Built environment, urban heat islands and urban greenery",
+                email: "yonglitang2000@gmail.com",
+                homepage: "#",
+                img: "https://via.placeholder.com/200/ddd/333?text=YT"
+              },
+              {
+                name: "Hongyu Ye",
+                role: "Spatial big data applications and 3D city modelling and simulation",
+                email: "jackson513ye@qq.com",
+                homepage: "#",
+                img: "https://via.placeholder.com/200/ddd/333?text=HY"
+              },
+              {
+                name: "Haoran Gong",
+                role: "computer vision, point clouds, and 3D reconstruction",
+                email: "",
+                homepage: "#",
+                img: "https://via.placeholder.com/200/ddd/333?text=HG"
+              },
+              {
+                name: "Sihan Li",
+                role: "GIS, Information Visualization",
+                email: "",
+                homepage: "#",
+                img: "https://via.placeholder.com/200/ddd/333?text=SL"
+              }
+            ],
+
+            // Visiting Scholars
+            vsc: [
+              {
+                name: "Shaoqing Dai",
+                role: "Spatial-temporal data analysis, geo-health, spatial statistics",
+                email: "dsq1993qingge@163.com",
+                homepage: "https://gisersqdai.top/mycv/",
+                img: "https://via.placeholder.com/200/ddd/333?text=SD"
+              },
+              {
+                name: "Ruqiao Jiang",
+                role: "Big geodata processing",
+                email: "jiangruqiao@gmail.com",
+                homepage: "#",
+                img: "https://via.placeholder.com/200/ddd/333?text=RJ"
+              },
+              {
+                name: "Xijing Huang",
+                role: "Multi-agent social simulation, Agent-Based Modeling, Computational social science",
+                email: "",
+                homepage: "#",
+                img: "https://via.placeholder.com/200/ddd/333?text=XH"
+              }
+            ],
+
+            // Alumni
+            alu: [
+              {
+                name: "Ke Xu",
+                role: "3D Scene Generation & Computer vision",
+                email: "kexu0501@gmail.com",
+                homepage: "#",
+                img: "https://via.placeholder.com/200/ddd/333?text=KX"
+              },
+              {
+                name: "Rui ZHANG",
+                role: "3D vision & Multimodal learning",
+                email: "",
+                homepage: "#",
+                img: "https://via.placeholder.com/200/ddd/333?text=RZ"
+              },
+              {
+                name: "Guanyu Hou",
+                role: "Alumni (Research field not specified)",
+                email: "houguanyu21@gmail.com",
+                homepage: "#",
+                img: "https://via.placeholder.com/200/ddd/333?text=GH"
+              },
+              {
+                name: "Hongrong Wang",
+                role: "software development, generative AI",
+                email: "b1520618977@163.com",
+                homepage: "#",
+                img: "https://via.placeholder.com/200/ddd/333?text=HW"
+              },
+              {
+                name: "Zhiyuan Xu",
+                role: "Remote sensing image analysis, NLP and machine learning",
+                email: "RenHonglin010407@163.com",
+                homepage: "#",
+                img: "https://via.placeholder.com/200/ddd/333?text=ZX"
+              },
+              {
+                name: "Honglin Ren",
+                role: "Green buildings and machine learning in built environment",
+                email: "RenHonglin010407@163.com",
+                homepage: "#",
+                img: "https://via.placeholder.com/200/ddd/333?text=HR"
+              },
+              {
+                name: "Juran Zhang",
+                role: "Remote sensing data processing, distributed computing",
+                email: "zhangjurann@gmail.com",
+                homepage: "https://www.linkedin.com/in/juran-zhang",
+                img: "https://via.placeholder.com/200/ddd/333?text=JZ"
+              }
+            ]
         };
         // --- 列表页数据 ---
         // --- 列表页数据 (新增 articleId 字段) ---
@@ -554,14 +834,21 @@
                 </div>
               </FadeInSection>
 
-              {/* Research Preview (Homepage) */}
+              {/* 主页的研究页样式 */}
               <FadeInSection>
                  <h2 className="px-5 text-4xl sm:text-[64px] font-bold mb-6">Research</h2>
                  {RESEARCH_PROJECTS.slice(0,3).map((project, index) => (
                    // 移除 gap, 背景透明/白色 (无底色), 直角
                    <div key={project.id} className={`flex flex-col md:flex-row ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''} gap-0 items-center mb-8 group hover-zoom-container overflow-hidden`}> 
-                      <div className="w-full md:w-3/4 aspect-[3/2] md:h-[350px] bg-gray-200 overflow-hidden rounded-none">
-                         <img src={project.img} className="w-full h-full object-cover hover-zoom-img" alt={project.title} />
+                      <div 
+                        className="w-full md:w-3/4 aspect-[3/2] md:h-[350px] bg-gray-200 overflow-hidden rounded-none relative cursor-pointer" 
+                        onClick={() => setPage('research')}
+                      >
+                        <img 
+                          src={project.img} 
+                          className="w-full h-full object-cover hover-zoom-img" 
+                          alt={project.title} 
+                        />
                       </div>
                       {/* 文字区域无背景色 bg-white/transparent */}
                       <div className="w-full md:w-1/4 p-6 flex flex-col justify-center">
@@ -573,7 +860,7 @@
                  ))}
               </FadeInSection>
 
-              {/* 主页的人员页 */}
+              {/* 主页的人员页样式 */}
               <FadeInSection>
                 {/* 移除 gap, 背景透明/白色, 直角 */}
                 <div className="flex flex-col md:flex-row gap-0 h-auto overflow-hidden rounded-none">
@@ -594,7 +881,7 @@
                 </div>
               </FadeInSection>
 
-              {/* 主页的数据页 */}
+              {/* 主页的数据页样式 */}
               <FadeInSection className="flex flex-col md:flex-row gap-8 lg:gap-12">
                 <div className="w-full md:w-1/4">
                    <h2 className="px-5 text-4xl sm:text-[64px] font-bold leading-none">Resource <br/>& <br/>Data</h2>
@@ -651,30 +938,46 @@
                     <div className="max-w-7xl mx-auto px-6 py-16">
                         <h1 className="text-4xl md:text-5xl font-bold mb-12 md:mb-16">Meet our team</h1>
                         
-                        {/* PI Section: 保持扁平设计，无圆角 */}
-                        <div className="bg-slate-100 p-8 md:p-12 flex flex-col md:flex-row gap-8 md:gap-16 items-center mb-20 rounded-none">
-                            <div className="w-48 h-48 md:w-64 md:h-64 flex-shrink-0">
-                                <img src={TEAM_DATA.pi.image} alt={TEAM_DATA.pi.name} className="w-full h-full rounded-full object-cover shadow-none" />
+                        {/* PI卡片样式*/}
+                        <div className="w-full h-full bg-slate-100 p-8 md:p-12 flex flex-col md:flex-row gap-8 md:gap-16 items-top mb-20 rounded-none">
+                            <div className="w-1/3 h-128  md:h-128 items-center">
+                                <img src="images/people/wufan.jpg" alt={TEAM_DATA.pi.name} className="w-48 h-48 md:w-64 md:h-64 lg:w-96 lg:h-96 mb-10 rounded-full object-cover shadow-none" />
+                                
+                                <a href="mailto:wufanzhao@hkust-gz.edu.cn" target="_blank" class="mb-1 text-lg md:text-lg text-blue-500 underline">wufanzhao@hkust-gz.edu.cn</a>
+                                  <br/>
+                                <a href="https://www.openstreetmap.org/?#map=17/22.891298/113.476131&layers=N" target="_blank" class="mb-1 text-lg md:text-lg text-blue-500 underline">HKUST(GZ)E1 L4 408</a>
                             </div>
-                            <div className="flex-1">
+                            <div className="flex-1 w-2/3">
                                 <h2 className="text-3xl md:text-4xl font-bold mb-1">{TEAM_DATA.pi.name}</h2>
                                 <p className="text-lg md:text-xl text-gray-500 mb-6">{TEAM_DATA.pi.role}</p>
-                                <p className="text-sm md:text-base text-gray-700 leading-relaxed text-justify">{TEAM_DATA.pi.bio}</p>
+                                <p className="text-lg md:text-lg text-gray-700 leading-relaxed text-justify">{TEAM_DATA.pi.bio}</p>
                                 <h3 className="text-2xl md:text-2xl font-bold mb-1 pt-6">Education</h3>
-                                <p className="text-sm md:text-base text-gray-700 leading-relaxed text-justify">{TEAM_DATA.pi.edu}</p>
+                                <ul className="list-disc pl-6 space-y-1">
+                                  {TEAM_DATA.pi.edu.map((item, index) => (
+                                    <li key={index} className="text-lg rounded-lg font-bold text-gray-700">{item}</li>
+                                  ))}
+                                </ul>
                                 <h3 className="text-2xl md:text-2xl font-bold mb-1 pt-6">Awards</h3>
-                                <p className="text-sm md:text-base text-gray-700 leading-relaxed text-justify">{TEAM_DATA.pi.Awards}</p>
+                                <ul className="list-disc pl-6 space-y-1">
+                                  {TEAM_DATA.pi.Awards.map((item, index) => (
+                                    <li key={index} className="text-lg rounded-lg font-bold text-gray-700">{item}</li>
+                                  ))}
+                                </ul>
                                 <h3 className="text-2xl md:text-2xl font-bold mb-1 pt-6">Research Interests</h3>
-                                <p className="text-sm md:text-base text-gray-700 leading-relaxed text-justify">{TEAM_DATA.pi.ri}</p>
+                                <ul className="list-disc pl-6 space-y-1">
+                                  {TEAM_DATA.pi.ri.map((item, index) => (
+                                    <li key={index} className="text-lg rounded-lg font-bold text-gray-700">{item}</li>
+                                  ))}
+                                </ul>
                             </div>
                         </div>
-
-                        <div className="mb-16">
-                            <h2 className="text-2xl md:text-3xl font-bold mb-8 pl-2 border-l-4 border-black">PhD Students</h2>
+                        {/* 人员卡片样式 */}
+                        <div className="mb-16">{/* 博士与博后卡片) */}
+                            <h2 className="text-2xl md:text-3xl font-bold mb-8 pl-2 border-l-4 border-black">Postdoc Researcher & Ph.D. Students</h2>
                             {/* 修复：恢复卡片设计 (White box, border, padding, shadow, rounded-xl) */}
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                                 {TEAM_DATA.phd.map((member, idx) => (
-                                    <FadeInSection key={idx} className="bg-white border border-gray-200 rounded-xl p-6 flex flex-col items-center text-center hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                                    <FadeInSection key={idx} className="bg-white border border-gray-200 rounded-2xl p-6 flex flex-col items-center text-center hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
                                         <img src={member.img} alt={member.name} className="w-32 h-32 rounded-full object-cover mb-4 bg-gray-100" />
                                         {/* 姓名作为链接接口 */}
                                         <a href={member.homepage} className="font-bold text-lg mb-1 hover:text-blue-600 transition" target="_blank">
@@ -683,6 +986,97 @@
                                         <p className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-3 min-h-[32px]">{member.role}</p>
                                         <a href={`mailto:${member.email}`} className="text-xs text-blue-500 flex items-center gap-1 hover:underline"><Mail size={12}/> {member.email}</a>
                                     </FadeInSection>
+                              
+                                ))}
+                            </div>
+                        </div>
+                        <div className="mb-16">{/* 硕士卡片) */}
+                            <h2 className="text-2xl md:text-3xl font-bold mb-8 pl-2 border-l-4 border-black">Master Students</h2>
+                            {/* 修复：恢复卡片设计 (White box, border, padding, shadow, rounded-xl) */}
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                                {TEAM_DATA.mst.map((member, idx) => (
+                                    <FadeInSection key={idx} className="bg-white border border-gray-200 rounded-2xl p-6 flex flex-col items-center text-center hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                                        <img src={member.img} alt={member.name} className="w-32 h-32 rounded-full object-cover mb-4 bg-gray-100" />
+                                        {/* 姓名作为链接接口 */}
+                                        <a href={member.homepage} className="font-bold text-lg mb-1 hover:text-blue-600 transition" target="_blank">
+                                            {member.name}
+                                        </a>
+                                        <p className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-3 min-h-[32px]">{member.role}</p>
+                                        <a href={`mailto:${member.email}`} className="text-xs text-blue-500 flex items-center gap-1 hover:underline"><Mail size={12}/> {member.email}</a>
+                                    </FadeInSection>
+                              
+                                ))}
+                            </div>
+                        </div>
+                        <div className="mb-16">{/* RA卡片) */}
+                            <h2 className="text-2xl md:text-3xl font-bold mb-8 pl-2 border-l-4 border-black">Research Assistant</h2>
+                            {/* 修复：恢复卡片设计 (White box, border, padding, shadow, rounded-xl) */}
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                                {TEAM_DATA.ra.map((member, idx) => (
+                                    <FadeInSection key={idx} className="bg-white border border-gray-200 rounded-2xl p-6 flex flex-col items-center text-center hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                                        <img src={member.img} alt={member.name} className="w-32 h-32 rounded-full object-cover mb-4 bg-gray-100" />
+                                        {/* 姓名作为链接接口 */}
+                                        <a href={member.homepage} className="font-bold text-lg mb-1 hover:text-blue-600 transition" target="_blank">
+                                            {member.name}
+                                        </a>
+                                        <p className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-3 min-h-[32px]">{member.role}</p>
+                                        <a href={`mailto:${member.email}`} className="text-xs text-blue-500 flex items-center gap-1 hover:underline"><Mail size={12}/> {member.email}</a>
+                                    </FadeInSection>
+                              
+                                ))}
+                            </div>
+                        </div>
+                        <div className="mb-16">{/* 访问学生卡片) */}
+                            <h2 className="text-2xl md:text-3xl font-bold mb-8 pl-2 border-l-4 border-black">Visiting Students</h2>
+                            {/* 修复：恢复卡片设计 (White box, border, padding, shadow, rounded-xl) */}
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                                {TEAM_DATA.vst.map((member, idx) => (
+                                    <FadeInSection key={idx} className="bg-white border border-gray-200 rounded-2xl p-6 flex flex-col items-center text-center hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                                        <img src={member.img} alt={member.name} className="w-32 h-32 rounded-full object-cover mb-4 bg-gray-100" />
+                                        {/* 姓名作为链接接口 */}
+                                        <a href={member.homepage} className="font-bold text-lg mb-1 hover:text-blue-600 transition" target="_blank">
+                                            {member.name}
+                                        </a>
+                                        <p className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-3 min-h-[32px]">{member.role}</p>
+                                        <a href={`mailto:${member.email}`} className="text-xs text-blue-500 flex items-center gap-1 hover:underline"><Mail size={12}/> {member.email}</a>
+                                    </FadeInSection>
+                              
+                                ))}
+                            </div>
+                        </div>
+                        <div className="mb-16">{/* 访问学者卡片) */}
+                            <h2 className="text-2xl md:text-3xl font-bold mb-8 pl-2 border-l-4 border-black">Visiting Scholar</h2>
+                            {/* 修复：恢复卡片设计 (White box, border, padding, shadow, rounded-xl) */}
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                                {TEAM_DATA.vsc.map((member, idx) => (
+                                    <FadeInSection key={idx} className="bg-white border border-gray-200 rounded-2xl p-6 flex flex-col items-center text-center hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                                        <img src={member.img} alt={member.name} className="w-32 h-32 rounded-full object-cover mb-4 bg-gray-100" />
+                                        {/* 姓名作为链接接口 */}
+                                        <a href={member.homepage} className="font-bold text-lg mb-1 hover:text-blue-600 transition" target="_blank">
+                                            {member.name}
+                                        </a>
+                                        <p className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-3 min-h-[32px]">{member.role}</p>
+                                        <a href={`mailto:${member.email}`} className="text-xs text-blue-500 flex items-center gap-1 hover:underline"><Mail size={12}/> {member.email}</a>
+                                    </FadeInSection>
+                              
+                                ))}
+                            </div>
+                        </div>
+                        <div className="mb-16">{/* 校友卡片) */}
+                            <h2 className="text-2xl md:text-3xl font-bold mb-8 pl-2 border-l-4 border-black">Alumni</h2>
+                            {/* 修复：恢复卡片设计 (White box, border, padding, shadow, rounded-xl) */}
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                                {TEAM_DATA.alu.map((member, idx) => (
+                                    <FadeInSection key={idx} className="bg-white border border-gray-200 rounded-2xl p-6 flex flex-col items-center text-center hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                                        <img src={member.img} alt={member.name} className="w-32 h-32 rounded-full object-cover mb-4 bg-gray-100" />
+                                        {/* 姓名作为链接接口 */}
+                                        <a href={member.homepage} className="font-bold text-lg mb-1 hover:text-blue-600 transition" target="_blank">
+                                            {member.name}
+                                        </a>
+                                        <p className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-3 min-h-[32px]">{member.role}</p>
+                                        <a href={`mailto:${member.email}`} className="text-xs text-blue-500 flex items-center gap-1 hover:underline"><Mail size={12}/> {member.email}</a>
+                                    </FadeInSection>
+                              
                                 ))}
                             </div>
                         </div>
