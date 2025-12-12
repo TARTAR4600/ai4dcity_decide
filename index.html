@@ -45,7 +45,7 @@
     <script type="text/babel" data-type="module">
         import React, { useState, useEffect, useRef, useMemo } from 'react';
         import { createRoot } from 'react-dom/client';
-        import { MapPin, Mail, Linkedin, Twitter, Github, Menu, X, ChevronRight, Calendar, Clock, Video, ArrowRight, Globe, FileText, Database } from 'lucide-react';
+        import { MapPin, Mail, Linkedin, Twitter, Github, Menu, X, ChevronRight, Calendar, Clock, Video, ArrowRight, Globe, FileText, Database, GraduationCap } from 'lucide-react';
 
         // ==========================================
         // 1. 数据层
@@ -339,11 +339,15 @@
           pi: {
             name: "Wufan Zhao",
             role: "Principal Investigator",
-            bio: "Dr. Wufan Zhao is currently an Assistant Professor at the Urban Governance and Design (UGOD) Thrust, The Hong Kong University of Science and Technology (Guangzhou). He is the Principal Investigator (PI) of AI4DCity Lab. Before joining HKUST(GZ), he was a Research Fellow at Geomatics Group, KU Leuven. His research primarily focuses on AI-based remote sensing image understanding, 3D city modeling, multi-modal spatiotemporal data fusion, and their methodological and applied studies. His researches will specifically addresses challenges related to urban environments and socio-economic factors under various scales of Sustainable Development Goals (SDGs).",
-            //edu: ["PhD in Remote sensing and Earth Observation, ITC, University of Twente (2022)", 
-                  //"MSc in Geoinformatics, Nanjing Normal University & University of Salzrburg (2018)",
-                  //"BSc in GIS, Northwest A&F University (2015)"],
-            //Awards: ["Top 30 reviewers of the ISPRS Journal of Photogrammetry and Remote Sensing for 2023","UTwente ITC Ph.D. Publication Award, 2022", "CSC Scholarship, 2018-2022",],
+            bio: `Wufan ZHAO is an Assistant Professor (tenure-track) and PhD supervisor at HKUST(Guangzhou). He obtained his PhD in 2022 from the Faculty of Geo-Information Science and Earth Observation (ITC), University of Twente, the Netherlands, and conducted post-doctoral research at KU Leuven, Belgium, in 2023. His research interests include AI-based intelligent interpretation of remote-sensing images, 3D urban modeling with particular attention to high-fidelity and generative techniques, and the fusion and analytics of multi-source spatiotemporal data. His work aims to support multi-scale analysis and decision-making for urban-environment and socio-economic challenges, ultimately contributing to the UN Sustainable Development Goals. 
+            
+            He is the principal investigator of several national and provincial projects funded by the NSFC China and other agencies, and has also received national postdoc and provincial young-talent grants. He was awarded the ITC Best PhD Publication Award, and has published more than twenty papers as first or corresponding author in leading international journals and conferences such as ISPRS Journal, JAG, IEEE TGRS, and ICCV.`,
+
+            edu: ["Editorial Board Member of the Journal of Photogrammetric Engineering & Remote Sensing", 
+                  "Executive Committee Member, ACM SIGSPATIAL China Chapter",
+                  "Member of ISPRS Commission IV, WG 9 on Digital Twins",
+                  "Member of ISDE Young Scientist Innovation Network ISDE-YSIN"],
+            Awards: ["PG course, 24fall till now, Maching learning in Remote Sensing (5112)","PG course, 24fall-25spring, Science of City (5010)", "PG course, GIS and Spatial Analysis (5030), 26spring",],
             //ri: ["AI based remote sensing data processing and 3D modeling", "Spatio-temporal data science and digital twin cities","Urban complex systems and uncertainty",],*/}
             img: "images/people/wufan.jpg"
           },
@@ -392,7 +396,7 @@
                 role: "#",
                 email: "#",
                 homepage: "#",
-                img: "images/people/profile.png"
+                img: "images/people/wudongli.jpg"
               },
               // {
               //   name: "Liang Zeng",
@@ -473,22 +477,37 @@
                 img: "images/people/renyanrui.png"
               },
               {
-                name: "Bingchen Li",
-                role: "Urban Economics & Regional Economics",
-                email: "bingchen054@gmail.com",
-                homepage: "#",
-                img: "images/people/libingchen.png"
-              },
-              {
                 name: "Shuxian Shi",
                 role: "Remote sensing applications and urban environmental monitoring",
                 email: "Shelly-Shi@outlook.comR",
                 homepage: "#",
+                img: "images/people/shishuxian.jpg"
+              },
+              { name: "Danyang Zhang", 
+              role: "", 
+              email: "", 
+              homepage: "#", 
+              img: "images/people/zhangdanyang.png" },
+              { name: "Hongye Hou", 
+              role: "", 
+              email: "", 
+              homepage: "#", 
+              img: "images/people/houhongye.jpg" },
+              { name: "Xuran Hu", 
+              role: "", 
+              email: "", 
+              homepage: "xuran-hu.github.io", 
+              img: "images/people/huxuran.jpg" },
+              {
+                name: "Haoran Gong",
+                role: "computer vision, point clouds, and 3D reconstruction",
+                email: "",
+                homepage: "#",
                 img: "images/people/profile.png"
               },
               {
-                name: "Zhecheng Shi",
-                role: "Computer vision & Point cloud processing",
+                name: "Sihan Li",
+                role: "GIS, Information Visualization",
                 email: "",
                 homepage: "#",
                 img: "images/people/profile.png"
@@ -506,11 +525,23 @@
                 email: "626710943@QQ.com",
                 homepage: "#",
                 img: "images/people/profile.png"
-              }
+              },
+              { name: "Zhecheng Shi", 
+              role: "", 
+              email: "", 
+              homepage: "#", 
+              img: "images/people/profile.png" }
             ],
 
           // Visiting Students
           vst: [
+              {
+                name: "Bingchen Li",
+                role: "Urban Economics & Regional Economics",
+                email: "bingchen054@gmail.com",
+                homepage: "#",
+                img: "images/people/libingchen.png"
+              },
               {
                 name: "Xiaoyu Li",
                 role: "UAV remote sensing, environmental monitoring and LULC classification",
@@ -518,34 +549,22 @@
                 homepage: "#",
                 img: "images/people/lixiaoyu.png"
               },
-              {
-                name: "Yongli Tang",
-                role: "Built environment, urban heat islands and urban greenery",
-                email: "yonglitang2000@gmail.com",
-                homepage: "#",
-                img: "images/people/profile.png"
-              },
+              // {
+              //   name: "Yongli Tang",
+              //   role: "Built environment, urban heat islands and urban greenery",
+              //   email: "yonglitang2000@gmail.com",
+              //   homepage: "#",
+              //   img: "images/people/profile.png"
+              // },
               {
                 name: "Hongyu Ye",
                 role: "Spatial big data applications and 3D city modelling and simulation",
                 email: "jackson513ye@qq.com",
-                homepage: "#",
-                img: "images/people/profile.png"
+                homepage: "https://www.redfish.space/",
+                img: "images/people/yehongyu.jpg"
               },
-              {
-                name: "Haoran Gong",
-                role: "computer vision, point clouds, and 3D reconstruction",
-                email: "",
-                homepage: "#",
-                img: "images/people/profile.png"
-              },
-              {
-                name: "Sihan Li",
-                role: "GIS, Information Visualization",
-                email: "",
-                homepage: "#",
-                img: "images/people/profile.png"
-              }
+              
+              
             ],
 
             // Visiting Scholars
@@ -595,7 +614,7 @@
                 img: "images/people/xuke.png"
               },
               {
-                name: "Rui ZHANG",
+                name: "Rui Zhang",
                 role: "Phd at Aarhus University",
                 email: "",
                 homepage: "#",
@@ -632,8 +651,9 @@
                     - 3DGS, point cloud, mesh learning
                     - Multi-perspective/modal based reconstruction
                     - RS imagery interpretation`,
-            img: "images/news/ULSR/640.png", date: "Updated Oct 10 2025",
-            link: "https://mp.weixin.qq.com/s/aNZjGcmorOJKLHZeelAmtw"
+            img: "images/research/AccuCities-Accurate-3D-site-models.png", date: "Updated Oct 10 2025",
+            example: "Just like the ULSR-GS",
+            link: "https://www.sciencedirect.com/science/article/pii/S092427162500396X?via%3Dihub"
           },
           {
             id: 2, title: "Spatio-temporal (4D) Data Fusion",
@@ -641,8 +661,9 @@
                     - Spatio-temporal causality
                     - AI Agentic workflow
                     - XR scene interaction`,
-            img: "images/news/ULSR/640.png", date: "Updated Oct 10 2025",
-            link: "https://mp.weixin.qq.com/s/aNZjGcmorOJKLHZeelAmtw"
+            img: "images/research/spt.png", date: "Updated Oct 10 2025",
+            example: "Just like our gdverse package",
+            link: "https://www.researchgate.net/publication/390204234_gdverse_An_R_Package_for_Spatial_Stratified_Heterogeneity_Family"
           },
           {
             id: 3, title: "Built-environment and Urban System Understanding",
@@ -650,8 +671,9 @@
                     - Urban health (mobility, human diseases)
                     - Disaster Assessment
                     - Carbon neutrality and thermal environment`,
-            img: "images/news/ULSR/640.png", date: "Updated Oct 10 2025",
-            link: "https://mp.weixin.qq.com/s/aNZjGcmorOJKLHZeelAmtw"
+            img: "images/research/maxresdefault.jpg", date: "Updated Oct 10 2025",
+            example: "Just like the BuildingView",
+            link: "https://www.sciencedirect.com/science/article/pii/S092427162500396X?via%3Dihub"
           },
 ]
         // --- 研究主题列表页数据 (新增 articleId 字段) ---
@@ -661,26 +683,34 @@
             desc: "课题组最新提出的ULSR-GS[2]在此前的MVG-Splatting[3]工作基础上，提出 “点到图像（point-to-photo）分区 + 多视角引导稠密化 + 跨视深度/法向一致性约束”：为每个子区仅分配最相关影像，子区内以多视深度聚合与一致性损失进行稠密化优化，支持跨GPU并行训练并实现子区独立网格提取与无缝拼接；在多套城市级航测数据上，对现有GS方法取得稳定优势，并在总体耗时上显著优于传统基于MVS的方案。据上的泛化能力和计算效率，为遥感测绘、数字孪生等应用开拓新的技术路径。",
             img: "images/news/ULSR/640.png", date: "Updated Oct 10 2025",
             articleId: 'research-multimodal',
-            link: "https://mp.weixin.qq.com/s/aNZjGcmorOJKLHZeelAmtw"
+            link: "https://mp.weixin.qq.com/s/aNZjGcmorOJKLHZeelAmtw",
+            topic:"Al based 3D City Modeling",
+            year:"2026"
           },
           {
             id: 3, title: "ICCV25—Sat2City：利用级联潜空间扩散模型实现单张卫星图像的高保真三维城市生成",
             desc: "Sat2City成功实现了扩散模型与体素表示的有效结合，首次证明了从单张2D卫星影像高效生成城市级3D模型的可行性。未来，团队研究将着重提升模型在真实城市遥感数据上的泛化能力和计算效率，为遥感测绘、数字孪生等应用开拓新的技术路径。项目主页：https://ai4city-hkust.github.io/Sat2City/",
             img: "images/research/s2c.png", date: "Updated Oct 10 2025",
             articleId: 'research-multimodal',
-            link: "https://mp.weixin.qq.com/s/Kl8IiA1A_vgr0P1F-yr30Q"
+            link: "https://mp.weixin.qq.com/s/Kl8IiA1A_vgr0P1F-yr30Q",
+            topic:"Built-environment and Urban System Understanding",
+            year:"2025"
           },
           {
             id: 2, title: "Depth2Elevation：基于视觉基础模型迁移的单视图遥感图像高程估计",
             desc: "Depth2Elevation模型通过引入尺度调制器和分辨率自适应解码器，有效地将DAM的深度估计能力转移到单视图遥感图像的高程估计任务中。该模型在多个基准数据集上取得了卓越的性能，证明了其在不同尺度和场景下的适用性和泛化能力。结果可为地理信息科学的诸多应用提供了更准确、更可靠的高程数据支持。",
             img: "images/research/D2Ehr.png", date: "Updated Sep 05 2025",
             articleId: 'Depth2Elevation',
-            link:"https://mp.weixin.qq.com/s/JEKPHoqYUTONDszWnLk1uQ"
+            link:"https://mp.weixin.qq.com/s/JEKPHoqYUTONDszWnLk1uQ",
+            topic:"Built-environment and Urban System Understanding",
+            year:"2025"
           },
           {
             id: 1, title: "gdverse：一个集成的空间分层异质性建模工具",
             desc: "我们开发了一个专注于空间分层异质性建模的R包gdverse(Lv et al. 2025),通过设计一套统一的API接口和高效的算法实现，以期推动这些空间分层异质性模型的应用",
-            img: "images/research/gdverse.png", date: "Updated Sep 05 2025"
+            img: "images/research/gdverse.png", date: "Updated Sep 05 2025",
+            topic:"Spatio-temporal (4D) Data Fusion",
+            year:"2025"
           }
         ];
         // --- 出版物列表页数据 ---
@@ -688,7 +718,7 @@
             {
                 id: 6, title: "Dual-domain representation alignment for unsupervised height estimation from cross-resolution remote sensing images",
                 desc: " In this work, we explore a cross-resolution case encountered in many real-world applications to investigate the task of height estimation under unsupervised domain adaptation. ",
-                img: "images/research/USLR-GS/1-s2.0-S092427162500396X-gr19.jpg", 
+                img: "images/publication/dual-domain.png", 
                 date: "https://doi.org/10.1016/j.isprsjprs.2025.10.035",
                 link:"https://doi.org/10.1016/j.isprsjprs.2025.10.035",
                 articleId: 'DUALDO',
@@ -831,11 +861,9 @@
           }`;
 
           const handleNavClick = (id) => {
-              if (id === 'about') {
-                  scrollToAbout();
-              } else {
+              
                   setPage(id);
-              }
+              
           };
 
           return (
@@ -911,7 +939,7 @@
                   </div>
                   <div className="flex flex-col gap-8 flex-1">
                     <div>
-                      <h3 className="font-semibold text-2xl mb-2">Ai4DCity</h3>
+                      <h3 className="font-semibold text-2xl mb-2">AI4DCity</h3>
                       <p className="text-gray-500">Pioneering AI-based processing strategies for sustainable urban development.</p>
                     </div>
                     <div className="flex gap-4">
@@ -949,7 +977,7 @@
         const HomePage = ({ setPage, aboutRef }) => (
           <div className="w-full pb-[600px]">
             {/* Hero Section（实验室大标题，seminar信息等） */}
-            <div className="relative w-full h-[320px] md:h-[80vh] bg-gray-900 text-white flex justify-center">
+            <div className="relative w-full h-[320px] md:h-[100vh] bg-gray-900 text-white flex justify-center">
               <video
                   className="absolute inset-0 w-full h-full object-cover opacity-60"
                   autoPlay
@@ -959,7 +987,7 @@
                   poster="images/frontPage/large.jpg" 
               >
                   {/* 在下面 src 引号里填入你的视频链接 */}
-                  <source src="3drebuild.mp4" type="video/mp4" />
+                  <source src="3drebuildshort.mp4" type="video/mp4" />
               </video> 
               <div className="absolute bottom-16 md:bottom-24 w-full max-w-[1920px] mx-auto z-10">
                 <div className="px-6"> 
@@ -976,9 +1004,11 @@
               </div>
             </div>
 
-            <div className="max-w-[1920px] mx-auto px-0 py-12 md:py-16 space-y-64"> {/* 这一级是hero大图下面所有子模块的父容器 */}
-              {/* 主页的关于我们页 */}
-              <FadeInSection>
+            {/* 这一级是hero大图下面所有子模块的父容器 */}
+            <div className="max-w-[1920px] mx-auto px-0 py-12 md:py-16 space-y-64"> 
+              
+              {/* 主页的关于我们页(移去) */}
+              {/* <FadeInSection>
                   <div id="about-section" ref={aboutRef} className="pt-12">
                       <div className="max-w-4xl mx-auto text-center mb-8 px-0">
                           <h2 className="text-4xl sm:text-5xl font-bold mb-6">About Us</h2>
@@ -998,16 +1028,16 @@
                               <br/>
                               Undergraduate students are encouraged to apply for the <a href="https://www.hkust-gz.edu.cn/academics/education-innovation/red-bird-mphil-program/" target="_blank" class="text-blue-500 underline">RedBird MPhil of HKUST-gz</a>. Postdoc positions are open. Very competitive salary and research fund package. Welcome to drop your resume and research proposal.<br/>
                           </p>
-                      </div>
+                      </div> */} 
                       {/* 修复: 图片容器宽度与文字一致 max-w-4xl，居中，直角 */}
-                      <div className="w-full h-full max-w-4xl mx-auto aspect-auto bg-gray-100 overflow-hidden shadow-sm mb-12 rounded-none">
+                      {/* <div className="w-full h-full max-w-4xl mx-auto aspect-auto bg-gray-100 overflow-hidden shadow-sm mb-12 rounded-none">
                           <img src="images/frontPage/research-field.jpg" className="w-full h-full object-cover" alt="Research Diagram" />
                       </div>
                   </div>
-              </FadeInSection>
+              </FadeInSection>*/}
 
-              {/* 这是News的容器 */}
-              <FadeInSection className="flex flex-col md:flex-row gap-8 lg:gap-12">
+              {/* 这是原来News的容器，是像MIT的medialab那样的图文卡片 */}
+              {/* <FadeInSection className="flex flex-col md:flex-row gap-8 lg:gap-12">
                 
                 <div className="w-full md:w-4/4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6 lg:gap-8">
                   <div className="w-full md:w-1/4">
@@ -1028,7 +1058,68 @@
                      </div>
                    ))}
                 </div>
-              </FadeInSection>
+              </FadeInSection>*/}
+              {/* 这是新的News的容器，下滑表单 */}
+              <FadeInSection className="max-w-7xl mx-auto px-6 py-20">
+                <div className="flex flex-col lg:flex-row gap-12 lg:gap-20">
+                    
+                    {/* 左侧：标题区域 (固定宽度) */}
+                    <div className="w-full lg:w-1/4 flex-shrink-0">
+                        <h2 className="text-5xl md:text-7xl font-bold leading-none sticky top-24">
+                            News <br className="hidden lg:block"/>
+                            <span className="text-gray-300">&</span> <br className="hidden lg:block"/>
+                            Events
+                        </h2>
+                    </div>
+
+                    {/* 右侧：纯文字卡片列表 */}
+                    <div className="w-full lg:w-3/4 flex flex-col gap-4">
+                        {NEWS_ITEMS.map(item => (
+                            <div 
+                                key={item.id} 
+                                className="group relative w-full bg-white border border-gray-200 p-6 md:p-8 hover:border-black hover:shadow-lg transition-all duration-300 cursor-pointer rounded-lg"
+                                onClick={() => {
+                                    // 新增逻辑：优先判断外部链接 link，其次判断内部文章 articleId
+                                    if (item.link) {
+                                        window.open(item.link, '_blank');
+                                    } else if (item.articleId) {
+                                        setPage('article', item.articleId);
+                                    }
+                                }}
+                            >
+                                <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                                    
+                                    {/* 文字内容 */}
+                                    <div className="flex-1">
+                                        {/* Meta/日期：放上面或者标题下面都可以，这里放上面显得专业一点 */}
+                                        <p className="text-xs md:text-sm font-bold text-gray-400 mb-2 uppercase tracking-widest">
+                                            {item.meta}
+                                        </p>
+                                        
+                                        <h3 className="text-xl md:text-2xl font-bold text-black group-hover:text-blue-600 transition-colors pr-8">
+                                            {item.title}
+                                        </h3>
+                                        
+                                        {/* 如果需要显示描述，取消下面注释，但你要求只留标题，这里我先隐藏了 */}
+                                        {/* <p className="mt-2 text-gray-600 line-clamp-1">{item.desc}</p> */}
+                                    </div>
+
+                                    {/* 右侧箭头图标：给用户一个可点击的暗示 */}
+                                    <div className="hidden md:flex items-center justify-center w-10 h-10 rounded-full bg-gray-50 group-hover:bg-blue-600 transition-colors">
+                                        {/* 这里的箭头可以用 icon 库，或者简单的 svg */}
+                                        <svg 
+                                            className="w-5 h-5 text-gray-400 group-hover:text-white transform group-hover:-rotate-45 transition-all duration-300" 
+                                            fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                        >
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </FadeInSection>
 
               {/* 主页的研究页样式 */}
               <FadeInSection>
@@ -1049,8 +1140,8 @@
                       {/* 文字区域无背景色 bg-white/transparent */}
                       <div className="w-full md:w-1/4 p-6 flex flex-col justify-center">
                          <h3 className="text-2xl font-bold mb-4">{focus.title}</h3>
-                         <p className="text-lg text-black mb-6 text-justify whitespace-pre-line">{focus.desc}</p>
-                         <button onClick={() => setPage('research')} className="text-blue-600 font-bold hover:underline flex items-center">Read More <ChevronRight size={16}/> </button>
+                         <p className="text-lg text-black mb-6 text-left whitespace-pre-line">{focus.desc}</p>
+                         <button onClick={() => setPage(focus.link)} className="text-black font-bold hover:underline flex items-center">{focus.example} <ChevronRight size={16}/> </button>
                       </div>
                    </div>
                  ))}
@@ -1063,12 +1154,10 @@
                   <div className="w-full md:w-1/4 pt-0 pr-6 pb-6 pl-6 flex flex-col justify-top">
                     <h2 className="px-5 text-4xl sm:text-[64px] font-bold leading-none text-left">People</h2>
                     <div className="p-6 flex flex-col justify-center text-left">
-                      <p className="text-lg lg:text-lg text-black mb-6 text-justify">
+                      <p className="text-lg lg:text-lg text-black mb-6 text-left">
                         Our team is a diverse and talented group of researchers, including PhD candidates, MPhil students, Research Associates (RAs), and visiting students from around the world. Each member brings unique expertise and perspectives from varied academic and professional backgrounds, creating a dynamic collaborative environment. Together, we are committed to advancing cutting-edge research in AI-driven urban modeling and making meaningful contributions to sustainable city development.
                       </p>
-                      <button onClick={() => setPage('team')} className="text-xl font-bold hover:underline flex items-center gap-2 text-left">
-                        Meet our team <ArrowRight size={20} />
-                      </button>
+                      <button onClick={() => setPage('team')} className="text-black font-bold hover:underline flex items-center">Meet Our Team <ChevronRight size={16}/> </button>
                     </div>
                   </div>
                   <div className="md:w-3/4 aspect-[3/2] md:aspect-auto md:h-[800px] bg-gray-300 relative overflow-hidden hover-zoom-container ">
@@ -1208,21 +1297,21 @@
                             <div className="flex-1 w-2/3">
                                 <h2 className="text-3xl md:text-4xl font-bold mb-1">{TEAM_DATA.pi.name}</h2>
                                 <p className="text-lg md:text-xl text-gray-500 mb-6">{TEAM_DATA.pi.role}</p>
-                                <p className="text-lg md:text-lg text-gray-700 leading-relaxed text-justify">{TEAM_DATA.pi.bio}</p>
+                                <p className="text-lg md:text-lg text-gray-700 leading-relaxed text-justify whitespace-pre-line">{TEAM_DATA.pi.bio}</p>
                                 {/*这里注释掉的是原版的pi个人教育经历等版式*/}
-                                {/*<h3 className="text-2xl md:text-2xl font-bold mb-1 pt-6">Education</h3>
+                                <h3 className="text-2xl md:text-2xl font-bold mb-1 pt-6">Service</h3>
                                 <ul className="list-disc pl-6 space-y-1">
                                   {TEAM_DATA.pi.edu.map((item, index) => (
                                     <li key={index} className="text-lg rounded-lg font-bold text-gray-700">{item}</li>
                                   ))}
                                 </ul>
-                                <h3 className="text-2xl md:text-2xl font-bold mb-1 pt-6">Awards</h3>
+                                <h3 className="text-2xl md:text-2xl font-bold mb-1 pt-6">Teaching</h3>
                                 <ul className="list-disc pl-6 space-y-1">
                                   {TEAM_DATA.pi.Awards.map((item, index) => (
                                     <li key={index} className="text-lg rounded-lg font-bold text-gray-700">{item}</li>
                                   ))}
                                 </ul>
-                                <h3 className="text-2xl md:text-2xl font-bold mb-1 pt-6">Research Interests</h3>
+                                {/*<h3 className="text-2xl md:text-2xl font-bold mb-1 pt-6">Research Interests</h3>
                                 <ul className="list-disc pl-6 space-y-1">
                                   {TEAM_DATA.pi.ri.map((item, index) => (
                                     <li key={index} className="text-lg rounded-lg font-bold text-gray-700">{item}</li>
@@ -1261,7 +1350,7 @@
                                         <a href={member.homepage} className="font-bold text-lg mb-1 hover:text-blue-600 transition" target="_blank">
                                             {member.name}
                                         </a>
-                                        <p className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-3 min-h-[32px]">{member.role}</p>
+                                        <p className="text-xs font-medium text-gray-500 tracking-wide mb-3 min-h-[32px]">{member.role}</p>
                                         <a href={`mailto:${member.email}`} className="text-xs text-blue-500 flex items-center gap-1 hover:underline"><Mail size={12}/> {member.email}</a>
                                     </FadeInSection>
                               
@@ -1279,7 +1368,7 @@
                                         <a href={member.homepage} className="font-bold text-lg mb-1 hover:text-blue-600 transition" target="_blank">
                                             {member.name}
                                         </a>
-                                        <p className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-3 min-h-[32px]">{member.role}</p>
+                                        <p className="text-xs font-medium text-gray-500 tracking-wide mb-3 min-h-[32px]">{member.role}</p>
                                         <a href={`mailto:${member.email}`} className="text-xs text-blue-500 flex items-center gap-1 hover:underline"><Mail size={12}/> {member.email}</a>
                                     </FadeInSection>
                               
@@ -1297,7 +1386,7 @@
                                         <a href={member.homepage} className="font-bold text-lg mb-1 hover:text-blue-600 transition" target="_blank">
                                             {member.name}
                                         </a>
-                                        <p className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-3 min-h-[32px]">{member.role}</p>
+                                        <p className="text-xs font-medium text-gray-500 tracking-wide mb-3 min-h-[32px]">{member.role}</p>
                                         <a href={`mailto:${member.email}`} className="text-xs text-blue-500 flex items-center gap-1 hover:underline"><Mail size={12}/> {member.email}</a>
                                     </FadeInSection>
                               
@@ -1315,7 +1404,7 @@
                                         <a href={member.homepage} className="font-bold text-lg mb-1 hover:text-blue-600 transition" target="_blank">
                                             {member.name}
                                         </a>
-                                        <p className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-3 min-h-[32px]">{member.role}</p>
+                                        <p className="text-xs font-medium text-gray-500 tracking-wide mb-3 min-h-[32px]">{member.role}</p>
                                         <a href={`mailto:${member.email}`} className="text-xs text-blue-500 flex items-center gap-1 hover:underline"><Mail size={12}/> {member.email}</a>
                                     </FadeInSection>
                               
@@ -1333,7 +1422,7 @@
                                         <a href={member.homepage} className="font-bold text-lg mb-1 hover:text-blue-600 transition" target="_blank">
                                             {member.name}
                                         </a>
-                                        <p className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-3 min-h-[32px]">{member.role}</p>
+                                        <p className="text-xs font-medium text-gray-500 tracking-wide mb-3 min-h-[32px]">{member.role}</p>
                                         <a href={`mailto:${member.email}`} className="text-xs text-blue-500 flex items-center gap-1 hover:underline"><Mail size={12}/> {member.email}</a>
                                     </FadeInSection>
                               
@@ -1346,12 +1435,12 @@
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                                 {TEAM_DATA.alu.map((member, idx) => (
                                     <FadeInSection key={idx} className="bg-white border border-gray-200 rounded-2xl p-6 flex flex-col items-center text-center hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
-                                        <img src={member.img} alt={member.name} className="w-32 h-32 rounded-full object-cover mb-4 bg-gray-100" />
+                                        {/* <img src={member.img} alt={member.name} className="w-32 h-32 rounded-full object-cover mb-4 bg-gray-100" />原校友卡片照片部分*/}
                                         {/* 姓名作为链接接口 */}
                                         <a href={member.homepage} className="font-bold text-lg mb-1 hover:text-blue-600 transition" target="_blank">
                                             {member.name}
                                         </a>
-                                        <p className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-3 min-h-[32px]">{member.role}</p>
+                                        <p className="text-xs font-medium text-gray-500 tracking-wide mb-3 min-h-[32px]">{member.role}</p>
                                         <a href={`mailto:${member.email}`} className="text-xs text-blue-500 flex items-center gap-1 hover:underline"><Mail size={12}/> {member.email}</a>
                                     </FadeInSection>
                               
@@ -1363,8 +1452,7 @@
             );
         };
 
-        // 3. 独立页面列表组件 (Generic List Page) - 适用于 Research, Publication, Resources
-        // 注意：列表页保持圆角卡片风格 (rounded-2xl)
+        // 3. Research, Publication, Resources列表页面 注意：此处为第二版列表页，增添了按照时间与主题筛选的功能
         const ListPage = ({ title, description, items, type = "default" }) => {
               // --- 状态管理 ---
               const [selectedYear, setSelectedYear] = useState('All');
@@ -1499,7 +1587,7 @@
 
           export default ListPage;
 
-        //原列表页代码
+        //原Research, Publication, Resources列表页代码（无筛选）
         // const ListPage = ({ title, description, items, type = "default" }) => {
         //     return (
         //         <div className="pt-[81px] w-full min-h-screen">
@@ -1545,9 +1633,8 @@
         //         </div>
         //     );
         // };
-
-        // 独立页面(研究，出版，资源)包装器
-        // 独立页面(研究)包装器
+        []
+        // 研究列表页面包装器
         const ResearchPage = () => (
             <ListPage 
                 title="Research" 
@@ -1555,7 +1642,7 @@
                 items={RESEARCH_PROJECTS} 
             />
         );
-        // 独立页面(出版)包装器
+        // 出版列表页面包装器
         const PublicationPage = () => (
             <ListPage 
                 title="Publications" 
@@ -1563,7 +1650,7 @@
                 items={PUBLICATION_ITEMS} 
             />
         );
-        // 独立页面(资源)包装器
+        // 资源列表页面包装器
         const ResourcesPage = () => (
             <ListPage 
                 title="Data & Resources" 
@@ -1627,6 +1714,137 @@
           );
         };
 
+        // 5. 单独的 About Us 页面 (重构版：联系方式展开为三卡片)
+        const AboutPage = () => {
+            return (
+                <div className="pt-[81px] w-full min-h-screen bg-white">
+                    
+                    <div className="max-w-7xl mx-auto px-6 py-16">
+                        
+                        {/* =========================================
+                            1. 顶部区域：标题 + 纯文字介绍 + 大图
+                          ========================================= */}
+                        <FadeInSection>
+                            <h1 className="text-5xl md:text-6xl font-bold mb-10">About Us</h1>
+                            
+                            {/* 实验室介绍文本 */}
+                            <div className="w-full mb-24 text-lg text-gray-700 leading-relaxed space-y-6 gap-12  text-justify">
+                                <div>
+                                <h2 className="text-3xl font-bold text-gray-900 mb-4">HKUST (Guangzhou) Introduction</h2>  
+                                <p> HKUST (Guangzhou) Introduction
+                                    Hong Kong University of Science and Technology (Guangzhou) is a cooperation university between the Mainland and Hong Kong approved by the Ministry of Education. It was formally established in June 2022. HKUST (Guangzhou) is committed to innovation, featuring interdisciplinary development, and exploring innovative talent cultivation models. Its mission is to become a paradigm for the integration and development of Mainland and Hong Kong education and an internationally renowned, high-level university dedicated to cultivating high-level, innovative talents for the future.
+                                </p>
+                                </div>
+                                <div>
+                                <h2 className="text-3xl font-bold text-gray-900 mb-4">The Society Hub</h2>
+                                <p>
+                                    The Society Hub is one of the four academic hubs at HKUST (Guangzhou). It observes social development dynamics, actively aligns with national development strategies, and responds to market demands by providing policy and institutional innovation solutions.
+                                </p>
+                                </div>
+                                <div>
+                                <h2 className="text-3xl font-bold text-gray-900 mb-4">AI 4D City (AI4CITY) Lab</h2>
+                                <p>
+                                    4D refers to 3D space plus time series modeling. As the type and density of the remote sensing data continue to grow exponentially, 
+                                    Dr. Wufan Zhao and his AI4City Lab aim to help pioneer computationally efficient AI-based processing and modeling strategies 
+                                    to solve complex and practical urban problems by integrating the multi-dimensional/modal characteristics of big earth observation data.
+                                </p>
+                                </div>
+                                {/* 招生信息高亮框 */}
+                                <div className="p-6 bg-blue-50 border-l-4 border-blue-600 rounded-r-xl">
+                                    <p className="font-bold text-blue-900 mb-2">🚀 Openings</p>
+                                    <p className="text-base text-blue-800">
+                                        Long-term openings for RA and PhD positions in the Lab. Applications are welcome, students with a master’s degree background are preferred. 
+                                        PhD students will be admitted in January and September each year.
+                                        <br/><br/>
+                                        Undergraduate students are encouraged to apply for the <a href="https://www.hkust-gz.edu.cn/academics/education-innovation/red-bird-mphil-program/" target="_blank" rel="noreferrer" className="underline hover:text-blue-600 font-bold">RedBird MPhil of HKUST-gz</a>. 
+                                        Postdoc positions are open with competitive salary packages.
+                                    </p>
+                                </div>
+                            </div>
+
+                            
+                        </FadeInSection>
+
+
+                        {/* =========================================
+                              2. 中部区域：联系与社交链接 (5个独立卡片)
+                            ========================================= */}
+                          <div className="mb-24">
+                              <h2 className="text-3xl font-bold mb-8">Contact & Connect</h2>
+                              
+                              {/* Grid 布局：手机1列，中屏及以上5列 */}
+                              <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
+                                  
+                                  {/* --- 卡片 1: Email --- */}
+                                  <FadeInSection className="bg-white border border-gray-200 p-6 rounded-2xl hover:shadow-xl transition-all duration-300 group flex flex-col items-center text-center h-full">
+                                      {/* 链接挂在图标容器上 */}
+                                      <a href="mailto:wufanzhao@hkust-gz.edu.cn" className="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 mb-4 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300 cursor-pointer">
+                                          <Mail size={32} />
+                                      </a>
+                                      <h3 className="text-lg font-bold mb-2">Email Us</h3>
+                                      <p className="text-gray-500 text-sm">
+                                          For research inquiries and applications.
+                                      </p>
+                                  </FadeInSection>
+
+                                  {/* --- 卡片 2: Location --- */}
+                                  <FadeInSection className="bg-white border border-gray-200 p-6 rounded-2xl hover:shadow-xl transition-all duration-300 group flex flex-col items-center text-center h-full">
+                                      <a href="https://www.openstreetmap.org/?#map=17/22.891298/113.476131&layers=N" target="_blank" rel="noreferrer" className="w-16 h-16 bg-green-50 rounded-2xl flex items-center justify-center text-green-600 mb-4 group-hover:bg-green-600 group-hover:text-white transition-colors duration-300 cursor-pointer">
+                                          <MapPin size={32} />
+                                      </a>
+                                      <h3 className="text-lg font-bold mb-2">Visit Us</h3>
+                                      <p className="text-gray-500 text-sm">
+                                          HKUST(GZ) Campus, E1 Bldg, L4 408.
+                                      </p>
+                                  </FadeInSection>
+
+                                  {/* --- 卡片 3: Github --- */}
+                                  <FadeInSection className="bg-white border border-gray-200 p-6 rounded-2xl hover:shadow-xl transition-all duration-300 group flex flex-col items-center text-center h-full">
+                                      <a href="https://github.com/ai4city-hkust" target="_blank" rel="noreferrer" className="w-16 h-16 bg-gray-100 rounded-2xl flex items-center justify-center text-gray-700 mb-4 group-hover:bg-gray-800 group-hover:text-white transition-colors duration-300 cursor-pointer">
+                                          <Github size={32} />
+                                      </a>
+                                      <h3 className="text-lg font-bold mb-2">Github</h3>
+                                      <p className="text-gray-500 text-sm">
+                                          Explore our open-source code & projects.
+                                      </p>
+                                  </FadeInSection>
+
+                                  {/* --- 卡片 4: Google Scholar --- */}
+                                  <FadeInSection className="bg-white border border-gray-200 p-6 rounded-2xl hover:shadow-xl transition-all duration-300 group flex flex-col items-center text-center h-full">
+                                      <a href="https://scholar.google.com/citations?user=SE267o4AAAAJ" target="_blank" rel="noreferrer" className="w-16 h-16 bg-red-50 rounded-2xl flex items-center justify-center text-red-600 mb-4 group-hover:bg-red-600 group-hover:text-white transition-colors duration-300 cursor-pointer">
+                                          {/* 使用 Globe 图标代替 Scholar，或者用首字母 G */}
+                                          <GraduationCap size={32} /> 
+                                      </a>
+                                      <h3 className="text-lg font-bold mb-2">Google Scholar</h3>
+                                      <p className="text-gray-500 text-sm">
+                                          Read our latest research publications.
+                                      </p>
+                                  </FadeInSection>
+
+                                  {/* --- 卡片 5: LinkedIn --- */}
+                                  <FadeInSection className="bg-white border border-gray-200 p-6 rounded-2xl hover:shadow-xl transition-all duration-300 group flex flex-col items-center text-center h-full">
+                                      <a href="https://www.linkedin.com/in/wufan-zhao/" target="_blank" rel="noreferrer" className="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-700 mb-4 group-hover:bg-blue-700 group-hover:text-white transition-colors duration-300 cursor-pointer">
+                                          <Linkedin size={32} />
+                                      </a>
+                                      <h3 className="text-lg font-bold mb-2">LinkedIn</h3>
+                                      <p className="text-gray-500 text-sm">
+                                          Connect with Dr. Wufan Zhao.
+                                      </p>
+                                  </FadeInSection>
+
+                              </div>
+                          </div>
+                        {/* 研究方向大图 */}
+                        <div className="w-full mb-24">
+                            <div className="w-full bg-gray-50 rounded-2xl overflow-hidden border border-gray-200 shadow-sm">
+                                <img src="images/frontPage/research-field.jpg" className="w-full h-auto object-cover" alt="Research Diagram" />
+                            </div>
+                            <p className="text-center text-sm text-gray-400 mt-3 italic">Overview of AI4City Lab Research Framework</p>
+                        </div>
+                    </div>
+                </div>
+            );
+        };
 
         // ==========================================
         // 5. 主程序 (App)
@@ -1691,6 +1909,7 @@
               case 'publication': return <PublicationPage />;
               case 'resources': return <ResourcesPage />;
               case 'article': return <ArticlePage articleId={articleId} />;
+              case 'about': return <AboutPage />;
               default: return <div className="pt-32 text-center min-h-[50vh]">Page Under Construction</div>;
             }
           };
